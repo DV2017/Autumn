@@ -1,0 +1,15 @@
+name: Autumn
+description: 'Autumn leaves description'
+author: 'Deepa Varma'
+homepage: 'http://localhost/~deepavarma/WebsiteBuilder/laravel/october/'
+code: ''
+form:
+    fields:
+        site_name:
+            label: 'Site name'
+            comment: 'The global website name'
+            default: 'Autumn October CMS'
+        site_meta_description:
+            label: 'Site Meta description'
+            comment: 'The global website description'
+            default: 'Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'

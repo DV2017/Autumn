@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="{{ this.page.meta_description }}">
+  <title>{{ this.page.title }}</title>
+  <!-- styles with a placeholder for any component styles -->
+  <link rel="stylesheet" href="https://bootswatch.com/4/sandstone/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ 'assets/css/theme.css'|theme }}">
+  {% styles %}
+</head>
+
+<body>
+  <header>
+    {% partial 'site/header' %}
+  </header>
+
+  <div class="container mt-3">
+    <section class="layout-section">
+      {% page %}
+    </section>
+  </div>
+
+  <footer>
+    {% partial 'site/footer' %}
+  </footer>
+  <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
+  <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
+  <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+</body>
+
+</html>
